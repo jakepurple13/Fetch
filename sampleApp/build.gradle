@@ -2,8 +2,6 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
-
 buildscript {
     apply from: '../versions.gradle'
     repositories {
@@ -59,6 +57,7 @@ dependencies {
 
     implementation project(':fetch2okhttp')
     implementation project(':fetch2rx')
+    implementation project(':fetch2coroutine')
     implementation project(':fetch2')
     implementation project(':fetchmigrator')
     implementation project(':fetch2fileserver')
